@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Cambio divisas</title>
+</head>
+<body>
+    <!-- CABECERA -->
+    <header>
+        <h1>Cambio de divisas</h1>
+        <img src="./img/divisas.jpg" alt="divisas">
+    </header>
+    <!-- FIN CABECERA -->
+    <!-- MENSAJE ERROR -->
+    <div>
+        <h2 id="error"></h2>
+    </div>
+    <!-- FIN MENSAJE ERROR -->
+    <!-- PRINCIPAL -->
+    <main>
+        <form action="#" id="formulario">
+            <div class="select_divisa">
+                <label for="select_divisa">Selector de divisa</label>
+                <select name="select_divisa" id="select_divisa">
+                    <option value="0">--Elige una divisa € / £ / $--</option>
+                    <option value="1">Euros €</option>
+                    <option value="2">Libras £</option>
+                    <option value="3">Dolares $</option>
+                </select>
+            </div>
+            <div class="divisa_convertir">
+                <label for="divisa_input">Introduce una cantidad de la divisa introducida</label>
+                <input type="text" name="divisa_input" id="divisa_input">
+            </div>
+            <div class="boton">
+                <input type="submit" value="CONVERTIR" id="boton_convertir">
+            </div>
+            <div class="divisa_convertida">
+                <label for="divisa_output">Cantidad en Yenes</label>
+                <input type="text" name="divisa_output_yenes" id="divisa_output_yenes">
+            </div>
+            <div class="divisa_convertida">
+                <label for="divisa_output">Cantidad en Yuanes</label>
+                <input type="text" name="divisa_output_yuanes" id="divisa_output_yuanes">
+            </div>
+            <div class="divisa_convertida">
+                <label for="divisa_output">Cantidad en Rupias</label>
+                <input type="text" name="divisa_output_rupias" id="divisa_output_rupias">
+            </div>
+        </form>
+    </main>
+    <!-- FIN PRINCIPAL -->
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Cambio de divisas. Juan José Corporation</p>
+    </footer>
+    <!-- FIN PIE DE PÁGINA -->
+    <!-- EL CÓDIGO JS -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
